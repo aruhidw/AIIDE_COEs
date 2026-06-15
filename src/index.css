@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@theme {
+  /* Replace 'your-image-name.jpg' with your actual filename inside the public folder */
+  --background-image-site-bg: url('/bg_img.png'); 
+}
