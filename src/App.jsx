@@ -36,11 +36,11 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      {/* 1. Global background wrapper */}
+    
       <div className="bg-site-bg bg-cover bg-center bg-no-repeat bg-fixed min-h-screen flex flex-col">
         <Navbar />
 
-        {/* 2. flex-grow pushes the footer to the very bottom of the page */}
+       
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

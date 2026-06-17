@@ -1,9 +1,7 @@
 import React from 'react';
 import Header from '../components/Header'; // Reusing your beautiful header layout
 
-// ==========================================
-// DATA OBJECTS & STRUCTURES (Directly parsed from your Excel page code)
-// ==========================================
+
 const EXCEL_RESOURCES_DATA = [
   {
     title: "PIVOT Table 101",
@@ -25,21 +23,20 @@ const EXCEL_RESOURCES_DATA = [
 
 const MSExcel = () => {
   return (
-    /* Completely transparent root wrapper layout matching watermark backdrop behavior */
+    
     <div className="bg-transparent min-h-screen pb-20">
       
-      {/* Header Banner Section */}
       <Header
         title="Microsoft Excel"
         subtitle="Spreadsheet Mastery & Analytical Resources"
         image="/aiide_banner.webp"
       />
 
-      {/* Main Grid Wrapper mirroring 'container py-5 d-grid gap-5' */}
+      
       <main className="max-w-7xl mx-auto px-4 py-12 flex flex-col gap-8 bg-transparent">
         {EXCEL_RESOURCES_DATA.map((item, index) => (
           
-          /* Custom Section shadow config applied directly on top of transparent background */
+          
           <section 
             key={index}
             className="bg-transparent transition-all duration-300 hover:scale-[1.01]"
@@ -48,10 +45,10 @@ const MSExcel = () => {
               borderRadius: "23px"
             }}
           >
-            {/* Grid layout splitting row columns into 5-5-2 desktop layout matrices */}
+            
             <div className="grid grid-cols-1 md:grid-cols-12 items-center bg-transparent">
               
-              {/* Left Column (col-md-5 equivalent) - MS Excel Asset Logo */}
+           
               <div className="md:col-span-5 flex justify-center items-center p-6 border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <img 
                   src="msexcel.png" 
@@ -60,7 +57,7 @@ const MSExcel = () => {
                 />
               </div>
 
-              {/* Middle Column (col-md-5 equivalent) - Text Title Link */}
+              
               <div className="md:col-span-5 flex justify-center items-center p-6 text-center border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <h4 className="text-xl md:text-2xl font-semibold text-slate-800 hover:text-blue-600 transition duration-200">
                   <a href={item.pdfPath} target="_blank" rel="noopener noreferrer">
@@ -69,7 +66,7 @@ const MSExcel = () => {
                 </h4>
               </div>
 
-              {/* Right Column (col-md-2 equivalent) - File Download Action Trigger */}
+              
               <div className="md:col-span-2 flex justify-center items-center p-8 md:py-12 h-full">
                 <a 
                   href={item.pdfPath} 

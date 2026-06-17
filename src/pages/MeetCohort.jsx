@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 
-// ==========================================
-// MEET THE COHORT STARTUP DATA ARRAY (With Details & Website Links)
-// ==========================================
+
 const COHORT_STARTUPS = [
   { 
     id: 1, 
@@ -202,12 +200,12 @@ const MeetCohort = () => {
   return (
     <div className="bg-transparent min-h-screen pb-20 relative overflow-hidden">
       
-      {/* Decorative Branding Watermark Layer */}
+      
       <div className="absolute inset-0 pointer-events-none opacity-[0.02] select-none text-slate-500 font-bold text-[14vw] flex items-center justify-center rotate-[-12deg] z-0">
         AIIDE CoE
       </div>
 
-      {/* Header Banner Component */}
+     
       <Header
         title="Meet Our Cohort"
         subtitle="Discover our innovative, technology-driven startup portfolios scaling at AIIDE CoE"
@@ -216,22 +214,19 @@ const MeetCohort = () => {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         
-        {/* Dynamic Responsive Flex-Grid Blueprint */}
+       
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 xl:gap-6 mt-5">
           {COHORT_STARTUPS.map((startup) => (
             <div 
               key={startup.id} 
               className="flex items-center justify-center transform hover:-translate-y-1.5 transition-all duration-300"
             >
-              {/* Main Card Trigger Component */}
+             
               <button 
                 onClick={() => setSelectedStartup(startup)}
                 className="group block w-full border border-slate-800/60 rounded-2xl overflow-hidden shadow-md hover:shadow-blue-500/10 hover:border-blue-500/30 transition-all duration-300 cursor-pointer text-left focus:outline-none bg-slate-900"
               >
-                {/* 
-                  Logo Top Panel Layer:
-                  Pure white container matching background of logos to blend seamless and look native. 
-                */}
+               
                 <div className="w-full aspect-[4/3] sm:aspect-square flex items-center justify-center p-4 bg-white relative overflow-hidden">
                   <img 
                     src={`/cohart/${startup.img}`} 
@@ -245,10 +240,6 @@ const MeetCohort = () => {
                   />
                 </div>
 
-                {/* 
-                  Text Base Footer Strip:
-                  Provides an anchor for the brand label down below the graphic image panel.
-                */}
                 <div className="bg-slate-950/90 border-t border-slate-800/40 p-2 text-center min-h-[44px] flex items-center justify-center">
                   <span className="text-[11px] sm:text-xs font-semibold tracking-wide text-slate-200 line-clamp-1 group-hover:text-blue-400 transition-colors">
                     {startup.alt}
@@ -260,9 +251,7 @@ const MeetCohort = () => {
         </div>
       </main>
 
-      {/* ==========================================
-          DYNAMIC LIGHTBOX / MODAL OVERLAY MODIFIER
-          ========================================== */}
+      
       {selectedStartup && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm transition-opacity duration-300"
@@ -272,7 +261,7 @@ const MeetCohort = () => {
             className="bg-[#012640] border border-slate-700/60 w-full max-w-md rounded-2xl p-6 relative shadow-2xl transform scale-100 transition-all duration-300 max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button X Icon */}
+            
             <button 
               onClick={() => setSelectedStartup(null)}
               className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors p-1 rounded-lg bg-slate-900/40 border border-slate-800 cursor-pointer"
@@ -282,9 +271,9 @@ const MeetCohort = () => {
               </svg>
             </button>
 
-            {/* Modal Contents */}
+          
             <div className="flex flex-col items-center mt-4">
-              {/* Startup Logo Container in Details Modal */}
+              
               <div className="w-40 h-40 bg-white rounded-xl p-4 flex items-center justify-center border border-slate-800 mb-5 shadow-md">
                 <img 
                   src={`/cohort/${selectedStartup.img}`} 
@@ -297,22 +286,22 @@ const MeetCohort = () => {
                 />
               </div>
 
-              {/* Startup Name Metadata */}
+              
               <h3 className="text-xl font-bold text-white tracking-wide text-center mb-1">
                 {selectedStartup.alt}
               </h3>
               
-              {/* Industry Sector Tag */}
+             
               <p className="text-xs text-blue-400 font-semibold tracking-wider uppercase mb-4 text-center">
                 {selectedStartup.sector}
               </p>
 
-              {/* Startup Description Details Box */}
+              
               <div className="w-full bg-slate-900/40 border border-slate-800/80 rounded-xl p-4 mb-6 text-sm text-slate-300 leading-relaxed text-center">
                 {selectedStartup.desc}
               </div>
 
-              {/* Dynamic Action Trigger Conditional Website Button Block */}
+             
               {selectedStartup.website ? (
                 <a 
                   href={selectedStartup.website} 

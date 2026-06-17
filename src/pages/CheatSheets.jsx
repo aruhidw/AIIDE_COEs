@@ -1,9 +1,7 @@
 import React from 'react';
 import Header from '../components/Header'; // Reusing your beautiful header layout
 
-// ==========================================
-// DATA OBJECTS & STRUCTURES (Matching your original template list)
-// ==========================================
+
 const CHEAT_SHEETS_DATA = [
   {
     title: "Statictics Cheat Sheet",
@@ -65,21 +63,21 @@ const CHEAT_SHEETS_DATA = [
 
 const CheatSheets = () => {
   return (
-    /* Completely transparent root wrapper layout */
+   
     <div className="bg-transparent min-h-screen pb-20">
       
-      {/* Header Banner Section */}
+    
       <Header
         title="Cheat Sheets"
         subtitle="Quick Reference Knowledge Resources"
         image="/aiide_banner.webp"
       />
 
-      {/* Main Grid Wrapper echoing 'container py-5 d-grid gap-5' */}
+    
       <main className="max-w-7xl mx-auto px-4 py-12 flex flex-col gap-8 bg-transparent">
         {CHEAT_SHEETS_DATA.map((sheet, index) => (
           
-          /* Legacy Section shadow config applied directly on top of transparent backdrop */
+          
           <section 
             key={index}
             className="bg-transparent transition-all duration-300 hover:scale-[1.01]"
@@ -88,10 +86,10 @@ const CheatSheets = () => {
               borderRadius: "23px"
             }}
           >
-            {/* Grid layout splitting row columns into 5-5-2 desktop layout matrices */}
+          
             <div className="grid grid-cols-1 md:grid-cols-12 items-center bg-transparent">
               
-              {/* Left Column (col-md-5 equivalent) - Cheat Sheet Feature Brand Logo */}
+              
               <div className="md:col-span-5 flex justify-center items-center p-6 border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <img 
                   src="cheetsheet.png" 
@@ -100,7 +98,7 @@ const CheatSheets = () => {
                 />
               </div>
 
-              {/* Middle Column (col-md-5 equivalent) - Resource Anchor Text Link */}
+            
               <div className="md:col-span-5 flex justify-center items-center p-6 text-center border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <h4 className="text-xl md:text-2xl font-semibold text-slate-800 hover:text-blue-600 transition duration-200">
                   <a href={sheet.pdfPath} target="_blank" rel="noopener noreferrer">
@@ -109,7 +107,7 @@ const CheatSheets = () => {
                 </h4>
               </div>
 
-              {/* Right Column (col-md-2 equivalent) - File Delivery Icon */}
+             
               <div className="md:col-span-2 flex justify-center items-center p-8 md:py-12 h-full">
                 <a 
                   href={sheet.pdfPath} 

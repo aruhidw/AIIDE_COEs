@@ -11,7 +11,7 @@ const WebsiteLaunchDetail = () => {
 
   return (
     <div className="bg-slate-50 min-h-screen flex flex-col relative overflow-hidden text-slate-800">
-      {/* Decorative Branding Watermark Layer */}
+    
       <div className="absolute inset-0 pointer-events-none opacity-[0.02] select-none text-slate-500 font-bold text-[14vw] flex items-center justify-center rotate-[-12deg] z-0">
         AIIDE CoE
       </div>
@@ -23,9 +23,9 @@ const WebsiteLaunchDetail = () => {
         image="/aiide_banner.webp"
       />
 
-      {/* Main Container Area */}
+   
       <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-        {/* Breadcrumb Back Button */}
+      
         <div className="mb-8">
           <a 
             href="/news-events" 
@@ -38,10 +38,10 @@ const WebsiteLaunchDetail = () => {
           </a>
         </div>
 
-        {/* Core Event Information Content Card */}
+        
         <article className="bg-white border border-slate-200 shadow-sm rounded-3xl overflow-hidden p-6 sm:p-10 lg:p-12">
           
-          {/* Main Title Header Section */}
+          
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4 border border-blue-100">
               Official Launch Record
@@ -56,7 +56,7 @@ const WebsiteLaunchDetail = () => {
 
           <hr className="border-slate-100 my-8" />
 
-          {/* Core Body Paragraph Section */}
+         
           <div className="max-w-3xl mx-auto space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed text-justify">
             <p className="font-medium text-slate-900 text-center text-base sm:text-lg mb-8 leading-normal">
               To boost the innovation and entrepreneurship ecosystem by leveraging AI/ML, the Government of Uttar Pradesh has entrusted Indian Institute of Technology, Kanpur, and FICCI to establish a world-class Centre of Excellence in Noida. Startup Incubation and Innovation Centre, IIT Kanpur is glad to announce the launch of the AIIDE-CoE website -{" "}
@@ -79,7 +79,7 @@ const WebsiteLaunchDetail = () => {
             </p>
           </div>
 
-          {/* Premium Modern Photo Gallery Grid */}
+        
           <div className="mt-12">
             <h3 className="text-xs font-bold text-slate-400 tracking-widest uppercase mb-4 text-center sm:text-left">
               Event Gallery

@@ -6,12 +6,12 @@ const PartnerWithUs = () => {
 
   return (
     <div className="bg-transparent min-h-screen pb-20 relative overflow-hidden text-slate-800">
-      {/* Decorative Branding Watermark Layer */}
+     
       <div className="absolute inset-0 pointer-events-none opacity-[0.02] select-none text-slate-500 font-bold text-[14vw] flex items-center justify-center rotate-[-12deg] z-0">
         AIIDE CoE
       </div>
 
-      {/* Header Context Banner Component */}
+    
       <Header
         title="Partner With Us"
         subtitle="Connect with academic milestones, industry scale models, and active state development vectors"
@@ -20,9 +20,7 @@ const PartnerWithUs = () => {
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 space-y-16">
         
-        {/* ==========================================
-            SECTION 1: ECOSYSTEM TEXT PLATFORM
-           ========================================== */}
+       
         <section className="bg-white border border-slate-200 rounded-3xl shadow-sm p-6 sm:p-10 max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-center text-slate-900 tracking-wide uppercase mb-8">
             AI Innovation Ecosystem
@@ -46,7 +44,7 @@ const PartnerWithUs = () => {
               tangible products that impact the way we all live, work and play.
             </p>
 
-            {/* Expandable Core Context Container Block */}
+           
             <div
               className={`transition-all duration-500 ease-in-out overflow-hidden ${
                 isExpanded ? "max-h-[1000px] opacity-100 mt-4" : "max-h-0 opacity-0"
@@ -77,7 +75,7 @@ const PartnerWithUs = () => {
             </div>
           </div>
 
-          {/* Interactive Collapse Toggle Link Button Control */}
+          
           <div className="mt-6 pt-4 border-t border-slate-100 text-center">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
@@ -88,9 +86,7 @@ const PartnerWithUs = () => {
           </div>
         </section>
 
-        {/* ==========================================
-            SECTION 2 & 3: EXPRESSION OF INTEREST
-           ========================================== */}
+       
         <section className="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 text-white max-w-4xl mx-auto shadow-md">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="text-center sm:text-left">
@@ -112,9 +108,7 @@ const PartnerWithUs = () => {
           </div>
         </section>
 
-        {/* ==========================================
-            SECTION 4: PARTNERSHIPS OVERVIEW CARD
-           ========================================== */}
+        
         <section className="bg-white border border-slate-200 rounded-3xl shadow-sm p-6 sm:p-10 max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-extrabold text-slate-900 tracking-wide uppercase mb-4">
             Partnerships
@@ -126,11 +120,9 @@ const PartnerWithUs = () => {
         </section>
 
        
-       {/* ==========================================
-          SECTION 5: OUR PARTNERS IMAGES
-         ========================================== */}
+       
       <section className="py-3  w-full">
-        {/* First big combined image containing multiple logos */}
+       
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-center text-slate-900 font-bold uppercase tracking-wider text-xl sm:text-2xl mb-6">
@@ -145,7 +137,7 @@ const PartnerWithUs = () => {
           </div>
         </div>
 
-        {/* Second big combined image containing multiple logos */}
+       
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center pt-4 md:pt-8">
             <img 

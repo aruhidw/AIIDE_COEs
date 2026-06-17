@@ -1,9 +1,7 @@
 import React from 'react';
-import Header from '../components/Header'; // Reusing your beautiful header
+import Header from '../components/Header'; 
 
-// ==========================================
-// DATA OBJECTS & STRUCTURES (Matching your original list)
-// ==========================================
+
 const RESOURCE_DOCUMENTS = [
   {
     title: "AI for a better future",
@@ -49,20 +47,20 @@ const RESOURCE_DOCUMENTS = [
 
 const AIDataScience = () => {
   return (
-    /* Changed from bg-white to bg-transparent */
+   
     <div className="bg-transparent min-h-screen pb-20">
-      {/* Header Banner */}
+      
       <Header
         title="Artificial Intelligence & Data Science"
         subtitle="Knowledge Center Resources"
         image="/aiide_banner.webp"
       />
 
-      {/* Main Container mirroring your 'container py-5 d-grid gap-5' */}
+     
       <main className="max-w-7xl mx-auto px-4 py-12 flex flex-col gap-8 bg-transparent">
         {RESOURCE_DOCUMENTS.map((doc, index) => (
           
-          /* Card section changed to bg-transparent */
+         
           <section 
             key={index}
             className="bg-transparent transition-all duration-300 hover:scale-[1.01]"
@@ -71,10 +69,10 @@ const AIDataScience = () => {
               borderRadius: "23px"
             }}
           >
-            {/* Row container divided into 3 responsive columns matching your col-md-5, col-md-5, col-md-2 */}
+            
             <div className="grid grid-cols-1 md:grid-cols-12 items-center bg-transparent">
               
-              {/* Left Column (col-md-5 equivalent) - Cover Image */}
+       
               <div className="md:col-span-5 flex justify-center items-center p-6 border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <img 
                   src={doc.coverImage} 
@@ -83,7 +81,7 @@ const AIDataScience = () => {
                 />
               </div>
 
-              {/* Middle Column (col-md-5 equivalent) - Title Text */}
+              
               <div className="md:col-span-5 flex justify-center items-center p-6 text-center border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <h4 className="text-xl md:text-2xl font-semibold text-slate-800 hover:text-blue-600 transition duration-200">
                   <a href={doc.pdfPath} target="_blank" rel="noopener noreferrer">
@@ -92,7 +90,6 @@ const AIDataScience = () => {
                 </h4>
               </div>
 
-              {/* Right Column (col-md-2 equivalent) - File Icon Link */}
               <div className="md:col-span-2 flex justify-center items-center p-8 md:py-12 h-full">
                 <a 
                   href={doc.pdfPath} 

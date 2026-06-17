@@ -110,14 +110,12 @@ const GoverningBody = () => {
           </div>
         </div>
 
-        {/* Decorative Divider Line between groups */}
+      
         <div className="h-px bg-slate-200 w-full max-w-5xl mx-auto" />
 
-        {/* ROW 2: Remaining Members Block (Displays up to 4 columns) */}
+       
         <div>
-          {/* <h3 className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-6 text-center md:text-left">
-            Advisory & Board Members
-          </h3> */}
+        
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 justify-center">
             {REM_MEMBERS_MAP}
           </div>
@@ -128,7 +126,7 @@ const GoverningBody = () => {
   );
 };
 
-// Extracted internal map reference variable for neat clean compiler parsing
+
 const REM_MEMBERS_MAP = REMAINING_MEMBERS.map((member, index) => (
   <MemberCard key={index} member={member} />
 ));

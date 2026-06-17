@@ -17,21 +17,21 @@ const Webinars = () => {
   return (
     <div className="bg-transparent min-h-screen pb-20">
       
-      {/* Header Banner Component */}
+  
       <Header
         title="Featured Webinars"
         subtitle="Watch recorded streaming masterclasses and industry sessions"
         image="/aiide_banner.webp"
       />
 
-      {/* Main Grid Wrapper mirroring your 'container' layout */}
+      
       <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-12 bg-transparent">
         
-        {/* Responsive CSS Grid: Splits into 2 balanced columns on desktop (col-md-6 equivalent) */}
+      
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {WEBINAR_VIDEOS.map((video, index) => (
             
-            /* Glassmorphism Video Card Container with your custom shadow configuration */
+            
             <div 
               key={index}
               className="bg-transparent overflow-hidden transition-all duration-300 hover:scale-[1.01]"
@@ -40,7 +40,7 @@ const Webinars = () => {
                 borderRadius: "23px"
               }}
             >
-              {/* Responsive 16:9 Aspect Ratio Frame (embed-responsive-16by9 substitute) */}
+             
               <div className="relative w-full aspect-video bg-slate-950">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full border-0"

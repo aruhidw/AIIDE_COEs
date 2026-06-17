@@ -46,10 +46,12 @@ const SQLResources = () => {
               borderRadius: "23px"
             }}
           >
-            {/* Grid layout splitting row columns into 5-5-2 desktop layout matrices */}
+            
             <div className="grid grid-cols-1 md:grid-cols-12 items-center bg-transparent">
               
-              {/* Left Column (col-md-5 equivalent) - SQL Asset Graphic */}
+              
+              
+              
               <div className="md:col-span-5 flex justify-center items-center p-6 border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <img 
                   src="/sql.png" 
@@ -58,7 +60,7 @@ const SQLResources = () => {
                 />
               </div>
 
-              {/* Middle Column (col-md-5 equivalent) - Text Title Link */}
+           
               <div className="md:col-span-5 flex justify-center items-center p-6 text-center border-b md:border-b-0 md:border-r-2 border-slate-800 h-full">
                 <h4 className="text-xl md:text-2xl font-semibold text-slate-800 hover:text-blue-600 transition duration-200">
                   <a href={item.pdfPath} target="_blank" rel="noopener noreferrer">
@@ -67,7 +69,7 @@ const SQLResources = () => {
                 </h4>
               </div>
 
-              {/* Right Column (col-md-2 equivalent) - File Action Action Trigger */}
+           
               <div className="md:col-span-2 flex justify-center items-center p-8 md:py-12 h-full">
                 <a 
                   href={item.pdfPath} 

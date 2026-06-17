@@ -31,7 +31,7 @@ function Downloads() {
               key={index}
               className="flex flex-col md:flex-row items-center bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300 hover:border-blue-300 hover:shadow-md group"
             >
-              {/* Left Side: Asset Thumbnail */}
+          
               <div className="w-full md:w-1/4 bg-slate-50 p-4 flex justify-center items-center md:border-r border-slate-200">
                 <img 
                   src={item.imagePath} 
@@ -41,7 +41,7 @@ function Downloads() {
                 />
               </div>
 
-              {/* Middle Section: Document Title Link */}
+             
               <div className="w-full md:w-2/3 p-6 text-center md:text-left flex items-center justify-center md:justify-start gap-3">
                 <FileText className="w-5 h-5 text-blue-600 shrink-0 hidden sm:block" />
                 <a 
@@ -54,7 +54,7 @@ function Downloads() {
                 </a>
               </div>
 
-              {/* Right Side: Interactive Action Download Box */}
+             
               <div className="w-full md:w-1/6 p-4 md:p-0 flex justify-center items-center md:border-l border-slate-200 self-stretch bg-slate-50/50 md:bg-transparent">
                 <a 
                   href={item.pdfPath} 

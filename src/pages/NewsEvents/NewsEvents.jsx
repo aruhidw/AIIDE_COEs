@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // 👈 Added this to fix navigation behavior
+import { Link } from "react-router-dom";
+
 import Header from "../../components/Header";
 
-// ==========================================
-// DYNAMIC COMPONENT DATA CONFIGURATION
+const DYNAMIC_COMPONENT_DATA_CONFIGURATION = true;
 // ==========================================
 const UPCOMING_EVENTS = [];
 
@@ -92,21 +92,21 @@ const PAST_EVENTS = [
     title: "Webinar: Future of AI in Logistics & Supply Chain",
     img: "eventfirst.png",
     desc: "An expert panel tracking smart operations, predictive path automation, and edge delivery algorithms for logistics networks.",
-    link: "/news-events/healthcare-webinar", // 👈 FIXED: Given its own unique path
+    link: "/news-events/healthcare-webinar",
   },
   {
     id: "p15",
     title: "Webinar: Advanced AI Architectures in Healthcare",
     img: "imgthirdeventnew.png",
     desc: "Exploring precision bio-informatics telemetry modeling, medical imaging patterns, and remote clinical assistant models.",
-    link: "/news-events/healthcare-webinar", // ✅ Keeps healthcare route path
+    link: "/news-events/healthcare-webinar",
   },
   {
     id: "p16",
     title: "Webinar: Accelerating Data & AI Solutions",
     img: "WEBSITELAUNCH.png",
     desc: "Deep-dive workshops focusing on modern ingestion structures and optimizations scaling custom enterprise intelligence data nodes.",
-    link: "/news-events/data-ai-webinar", // 👈 FIXED: Given its own unique path
+    link: "/news-events/data-ai-webinar",
   },
 ];
 
@@ -115,12 +115,11 @@ const NewsEvents = () => {
 
   return (
     <div className="bg-transparent min-h-screen pb-20 relative overflow-hidden text-slate-800">
-      {/* Decorative Branding Watermark Layer */}
+    
       <div className="absolute inset-0 pointer-events-none opacity-[0.02] select-none text-slate-500 font-bold text-[14vw] flex items-center justify-center rotate-[-12deg] z-0">
         AIIDE CoE
       </div>
 
-      {/* Header Banner Component */}
       <Header
         title="News & Events"
         subtitle="Stay updated with upcoming summits, ecosystem announcements, and past milestones at AIIDE CoE"
@@ -129,7 +128,6 @@ const NewsEvents = () => {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 mt-5">
-          {/* Navigation Control Panel */}
           <div className="w-full md:w-64 shrink-0">
             <div className="bg-white border border-slate-200 rounded-2xl p-2.5 flex flex-row md:flex-col gap-1.5 sticky top-28 shadow-sm">
               <button
@@ -155,9 +153,7 @@ const NewsEvents = () => {
             </div>
           </div>
 
-          {/* Dynamic Content Display Panel */}
           <div className="flex-1">
-            {/* UPCOMING EVENTS GRID */}
             {activeTab === "upcoming" && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-slate-200 pb-4">
@@ -236,7 +232,6 @@ const NewsEvents = () => {
               </div>
             )}
 
-            {/* PAST EVENTS GRID */}
             {activeTab === "past" && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-slate-200 pb-4">

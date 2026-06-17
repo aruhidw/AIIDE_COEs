@@ -4,22 +4,11 @@ import Header from "../components/Header";
 function Home() {
   return (
     <>
-      {/* HERO BANNER */}
-      {/* <section className="w-full overflow-hidden px-8 rounded-xl py-4"> */}
-      {/* <img
-          src="/aiide_banner.webp"
-          alt="AIIDE Banner"
-          className="w-full object-cover"
-        />
-      </section> */}
-
       <Header
         title="Artificial Intelligence and Innovation Driven Entrepreneurship"
-        // subtitle="Center of Excellence"
         image="/aiide_banner.webp"
       />
 
-      {/* QUICK LINKS */}
       <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-5">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -46,11 +35,7 @@ function Home() {
               className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-blue-100 hover:-translate-y-2 transition duration-300"
             >
               <div className="p-6 text-center">
-                <img
-                  src="/timeline.png"
-                  alt=""
-                  className="h-20 mx-auto mb-4"
-                />
+                <img src="/timeline.png" alt="" className="h-20 mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-800">Timeline</h3>
               </div>
             </Link>
@@ -74,11 +59,7 @@ function Home() {
               className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-blue-100 hover:-translate-y-2 transition duration-300"
             >
               <div className="p-6 text-center">
-                <img
-                  src="/file.png"
-                  alt=""
-                  className="h-20 mx-auto mb-4"
-                />
+                <img src="/file.png" alt="" className="h-20 mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-800">Downloads</h3>
               </div>
             </Link>
@@ -86,11 +67,11 @@ function Home() {
         </div>
       </section>
 
-      {/* ABOUT + EVENTS */}
+      
       <section className="pb-16">
         <div className="max-w-7xl mx-auto px-5">
           <div className="grid lg:grid-cols-2 gap-10 items-start">
-            {/* ABOUT US CARD */}
+           
             <div className="bg-white/80 backdrop-blur-md p-8 rounded-2xl border border-blue-100 shadow-xl">
               <h2 className="text-3xl font-bold text-[#012640] mb-6">
                 About Us
@@ -117,7 +98,7 @@ function Home() {
               </Link>
             </div>
 
-            {/* EVENTS CARD */}
+           
             <div className="bg-white/80 backdrop-blur-md p-8 rounded-2xl border border-blue-100 shadow-xl">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-3xl font-bold text-[#012640]">Events</h2>
