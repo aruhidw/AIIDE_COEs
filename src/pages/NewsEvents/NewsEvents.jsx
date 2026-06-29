@@ -111,7 +111,7 @@ const PAST_EVENTS = [
 ];
 
 const NewsEvents = () => {
-  const [activeTab, setActiveTab] = useState("past");
+  const [activeTab, setActiveTab] = useState("upcoming");
 
   return (
     <div className="bg-transparent min-h-screen pb-20 relative overflow-hidden text-slate-800">
