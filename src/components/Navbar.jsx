@@ -9,13 +9,9 @@ const AIIDENavbar = () => {
 
   return (
     <>
-      {/* LOGO SECTION - Centered, close together, hides on mobile, small on md, normal on lg */}
       <div className="w-full bg-white border-b border-gray-100 hidden md:block">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-center">
-          {/* Changed justify-between to justify-center and added gap-8 to bring them close together */}
           <div className="flex flex-row items-center justify-center gap-8 md:gap-10">
-            
-            {/* Left Cluster: SIIC & IIT Kanpur */}
             <div className="flex items-center transition hover:opacity-90">
               <img
                 src="/siic_logo_.png"
@@ -24,7 +20,6 @@ const AIIDENavbar = () => {
               />
             </div>
 
-            {/* Center Brand: AIIDE Center of Excellence */}
             <div className="flex items-center transition hover:opacity-90">
               <img
                 src="/AIIDE-Logo.png"
@@ -33,7 +28,6 @@ const AIIDENavbar = () => {
               />
             </div>
 
-            {/* Right Cluster: FICCI & StartInUP */}
             <div className="flex items-center gap-4 md:gap-6 transition hover:opacity-90">
               <img
                 src="/FICCI_logo.png"
@@ -46,28 +40,29 @@ const AIIDENavbar = () => {
                 className="h-10 lg:h-14 object-contain transition-all"
               />
             </div>
-
           </div>
         </div>
       </div>
 
-      {/* STICKY NAVIGATION BAR */}
       <div className="sticky top-0 z-50 bg-[#012640] shadow-md">
         <div className="max-w-7xl mx-auto px-4 lg:px-6 py-2.5 flex items-center justify-between">
-
-          {/* DESKTOP LINKS */}
           <div className="hidden lg:flex items-center gap-5 xl:gap-7 text-white text-[11px] xl:text-xs font-bold tracking-wider">
-            
             {/* Lucide Home Icon */}
-            <Link to="/" className="text-white hover:text-blue-400 transition pr-1 flex items-center">
+            <Link
+              to="/"
+              className="text-white hover:text-blue-400 transition pr-1 flex items-center"
+            >
               <Home size={16} strokeWidth={2.5} />
             </Link>
 
             {/* ABOUT US - Right Aligned Dropdown */}
             <div className="relative group py-2">
               <button className="hover:text-blue-400 transition flex items-center gap-1 uppercase">
-                ABOUT US 
-                <ChevronDown size={12} className="opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                ABOUT US
+                <ChevronDown
+                  size={12}
+                  className="opacity-70 group-hover:rotate-180 transition-transform duration-200"
+                />
               </button>
 
               <div className="absolute right-0 top-full hidden group-hover:block bg-white text-black min-w-[200px] shadow-xl rounded-md py-2 mt-0 border border-gray-100">
@@ -89,8 +84,11 @@ const AIIDENavbar = () => {
             {/* KNOWLEDGE CENTER - Right Aligned Dropdown */}
             <div className="relative group py-2">
               <button className="hover:text-blue-400 transition flex items-center gap-1 uppercase">
-                KNOWLEDGE CENTER 
-                <ChevronDown size={12} className="opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                KNOWLEDGE CENTER
+                <ChevronDown
+                  size={12}
+                  className="opacity-70 group-hover:rotate-180 transition-transform duration-200"
+                />
               </button>
 
               <div className="absolute right-0 top-full hidden group-hover:block bg-white text-black min-w-[200px] shadow-xl rounded-md py-2 mt-0 border border-gray-100">
@@ -115,23 +113,38 @@ const AIIDENavbar = () => {
               </div>
             </div>
 
-            <Link to="/asset-management" className="hover:text-blue-400 transition uppercase">
+            <Link
+              to="/asset-management"
+              className="hover:text-blue-400 transition uppercase"
+            >
               ASSET MANAGEMENT
             </Link>
 
-            <Link to="/incubation-program" className="hover:text-blue-400 transition uppercase">
+            <Link
+              to="/incubation-program"
+              className="hover:text-blue-400 transition uppercase"
+            >
               INCUBATION PROGRAM
             </Link>
 
-            <Link to="/meet-cohort" className="hover:text-blue-400 transition uppercase">
+            <Link
+              to="/meet-cohort"
+              className="hover:text-blue-400 transition uppercase"
+            >
               MEET THE COHORT
             </Link>
 
-            <Link to="/news-events" className="hover:text-blue-400 transition uppercase">
+            <Link
+              to="/news-events"
+              className="hover:text-blue-400 transition uppercase"
+            >
               NEWS &amp; EVENTS
             </Link>
 
-            <Link to="/partner-with-us" className="hover:text-blue-400 transition uppercase">
+            <Link
+              to="/partner-with-us"
+              className="hover:text-blue-400 transition uppercase"
+            >
               PARTNER WITH US
             </Link>
           </div>
@@ -169,7 +182,6 @@ const AIIDENavbar = () => {
               <Menu size={24} />
             </button>
           </div>
-
         </div>
       </div>
 
@@ -180,7 +192,9 @@ const AIIDENavbar = () => {
         }`}
       >
         <div className="flex justify-between items-center p-5 border-b border-gray-100">
-          <span className="font-bold text-[#012640] text-sm tracking-wide">MENU</span>
+          <span className="font-bold text-[#012640] text-sm tracking-wide">
+            MENU
+          </span>
           <button
             onClick={() => setMobileOpen(false)}
             className="text-gray-500 hover:text-black focus:outline-none p-1"
@@ -190,8 +204,11 @@ const AIIDENavbar = () => {
         </div>
 
         <div className="flex flex-col px-6 py-4 gap-5 overflow-y-auto h-[calc(100%-80px)] text-[#012640] font-bold text-xs tracking-wide">
-          
-          <Link to="/" onClick={() => setMobileOpen(false)} className="py-1 border-b border-gray-100 flex items-center gap-2">
+          <Link
+            to="/"
+            onClick={() => setMobileOpen(false)}
+            className="py-1 border-b border-gray-100 flex items-center gap-2"
+          >
             <Home size={14} /> <span>HOME</span>
           </Link>
 
@@ -202,12 +219,19 @@ const AIIDENavbar = () => {
               className="w-full flex justify-between items-center py-1 border-b border-gray-100 text-left"
             >
               <span>ABOUT US</span>
-              <ChevronDown size={14} className={`transform transition-transform ${aboutOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                size={14}
+                className={`transform transition-transform ${aboutOpen ? "rotate-180" : ""}`}
+              />
             </button>
             {aboutOpen && (
               <div className="flex flex-col gap-3 mt-3 ml-4 text-[11px] font-medium text-gray-600">
-                <Link to="/about" onClick={() => setMobileOpen(false)}>About Us</Link>
-                <Link to="/governing-body" onClick={() => setMobileOpen(false)}>Governing Body</Link>
+                <Link to="/about" onClick={() => setMobileOpen(false)}>
+                  About Us
+                </Link>
+                <Link to="/governing-body" onClick={() => setMobileOpen(false)}>
+                  Governing Body
+                </Link>
               </div>
             )}
           </div>
@@ -219,34 +243,66 @@ const AIIDENavbar = () => {
               className="w-full flex justify-between items-center py-1 border-b border-gray-100 text-left"
             >
               <span>KNOWLEDGE CENTER</span>
-              <ChevronDown size={14} className={`transform transition-transform ${knowledgeOpen ? "rotate-180" : ""}`} />
+              <ChevronDown
+                size={14}
+                className={`transform transition-transform ${knowledgeOpen ? "rotate-180" : ""}`}
+              />
             </button>
             {knowledgeOpen && (
               <div className="flex flex-col gap-3 mt-3 ml-4 text-[11px] font-medium text-gray-600">
-                <Link to="/knowledge-center" onClick={() => setMobileOpen(false)}>Courses</Link>
-                <Link to="/facilities" onClick={() => setMobileOpen(false)}>Facilities</Link>
-                <Link to="/resources" onClick={() => setMobileOpen(false)}>Resources</Link>
+                <Link
+                  to="/knowledge-center"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Courses
+                </Link>
+                <Link to="/facilities" onClick={() => setMobileOpen(false)}>
+                  Facilities
+                </Link>
+                <Link to="/resources" onClick={() => setMobileOpen(false)}>
+                  Resources
+                </Link>
               </div>
             )}
           </div>
 
-          <Link to="/asset-management" onClick={() => setMobileOpen(false)} className="border-b border-gray-100 pb-1">
+          <Link
+            to="/asset-management"
+            onClick={() => setMobileOpen(false)}
+            className="border-b border-gray-100 pb-1"
+          >
             ASSET MANAGEMENT
           </Link>
 
-          <Link to="/incubation-program" onClick={() => setMobileOpen(false)} className="border-b border-gray-100 pb-1">
+          <Link
+            to="/incubation-program"
+            onClick={() => setMobileOpen(false)}
+            className="border-b border-gray-100 pb-1"
+          >
             INCUBATION PROGRAM
           </Link>
 
-          <Link to="/meet-cohort" onClick={() => setMobileOpen(false)} className="border-b border-gray-100 pb-1">
+          <Link
+            to="/meet-cohort"
+            onClick={() => setMobileOpen(false)}
+            className="border-b border-gray-100 pb-1"
+          >
             MEET THE COHORT
           </Link>
 
-          <Link to="/news-events" onClick={() => setMobileOpen(false)} className="border-b border-gray-100 pb-1">
+          <Link
+            to="/news-events"
+            onClick={() => setMobileOpen(false)}
+            className="border-b border-gray-100 pb-1"
+          >
             NEWS &amp; EVENTS
           </Link>
 
-          <Link to="/partner" onClick={() => setMobileOpen(false)} className="border-b border-gray-100 pb-1">
+          <Link
+            to="/partner"
+            onClick={() => setMobileOpen(false)}
+            className="border-b border-gray-100 pb-1"
+          >
             PARTNER WITH US
           </Link>
 

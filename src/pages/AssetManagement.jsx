@@ -35,7 +35,7 @@ const LABS_DATA = [
 {
     name: "Computer Center",
     
-    logo: "https://raw.githubusercontent.com/sonu-aut/Logos/main/iitk.png",
+    logo: "AssetManagement/CC.svg",
     link: "https://www.iitk.ac.in/cc/",
     isExternal: true,
     isTextLogo: false

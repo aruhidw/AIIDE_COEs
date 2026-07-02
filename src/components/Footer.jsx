@@ -1,6 +1,6 @@
 import React from "react";
 
-// 1. Core Contact & Link Data structured at the top for easy maintenance
+
 const CONTACT_INFO = {
   address: "IIT Kanpur Outreach Center, FIRST Innovation Hub 1 (2nd floor), C-20/1A/8 Block C, Sector 62 Noida, Pin Code - 201309",
   email: "aiidecoemailbox@gmail.com",
@@ -12,14 +12,14 @@ const CONTACT_INFO = {
 
 function Footer() {
   return (
-    // Replaced background with your custom branding color (#012640) and kept it relative z-40
+  
     <footer className="w-full bg-[#012640] text-slate-400 border-t border-slate-800 pt-16 pb-8 relative z-40 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Main 3-Column Layout */}
+       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start mb-12 text-left">
           
-          {/* Column 1: Location Address */}
+         
           <div>
             <h5 className="text-white font-semibold text-lg mb-4 tracking-wide">Locate Us</h5>
             <p className="text-sm leading-relaxed">
@@ -28,7 +28,7 @@ function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Contact Information & Interactive Action CTA Buttons */}
+         
           <div>
             <h5 className="text-white font-semibold text-lg mb-4 tracking-wide">Contact Us</h5>
             <div className="space-y-2 text-sm">
@@ -46,7 +46,7 @@ function Footer() {
               </p>
             </div>
 
-            {/* Quick Navigation Action Links */}
+           
             <div className="flex gap-3 mt-6">
               <a 
                 href={CONTACT_INFO.grievanceLink} 
@@ -65,11 +65,11 @@ function Footer() {
             </div>
           </div>
 
-          {/* Column 3: Live Embedded Google Map Frame */}
+          
           <div className="w-full h-44 rounded-xl overflow-hidden shadow-md border border-slate-800">
             <iframe 
               src={CONTACT_INFO.mapEmbedUrl} 
-              className="w-full h-full border-0 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="w-full h-full border-0 transition-all duration-300"
               allowFullScreen="" 
               loading="lazy"
               title="IIT Kanpur Noida Outreach Map location"
@@ -77,7 +77,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright Row using native dynamic year generation */}
+        
         <div className="pt-8 border-t border-slate-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p className="font-medium tracking-wide">
             © {new Date().getFullYear()} AIIDE-CoE. All rights reserved.

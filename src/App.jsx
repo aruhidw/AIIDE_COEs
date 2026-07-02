@@ -31,11 +31,15 @@ import WebsiteLaunchDetail from "./pages/NewsEvents/WebsiteLaunchDetail";
 import HealthcareWebinarDetail from "./pages/NewsEvents/HealthcareWebinarDetail";
 import DataAiWebinar from "./pages/NewsEvents/DataAiWebinar";
 import PartnerWithUs from "./pages/Partner/PartnerWithUs";
+
+// hooks
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
     
       <div className="bg-site-bg bg-cover bg-center bg-no-repeat bg-fixed min-h-screen flex flex-col">
         <Navbar />
